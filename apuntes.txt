@@ -1,0 +1,6 @@
+
+miConexion = sqlite3.connect("Peluqueria_INDIVIDUAL_N3")
+miCursor = miConexion.cursor()
+miCursor.execute("CREATE TABLE PERROS3 (NOMBRE_PERRO VARCHAR(30), NOMBRE_DUEÑO VARCHAR(30), DOMICILIO VARCHAR(30), TELEFONO VARCHAR(30))")
+miConexion.commit()
+miConexion.close()
